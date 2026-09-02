@@ -20,7 +20,7 @@ Every course platform claims to have "something for everyone." I wanted to know 
 So I pulled a raw export of courses, specializations, and professional certificates from four major platforms and built a Power BI report to interrogate it.
 
 <!-- 📸 Add your dashboard overview screenshot here -->
-![Dashboard Overview](assets/01-overview.png)
+![Dashboard Overview](pbdash.png)
 
 ---
 
@@ -35,10 +35,6 @@ So I pulled a raw export of courses, specializations, and professional certifica
 | **Skill vocabulary is Python-and-SQL-shaped** | `Python Programming`, `Data Analysis`, `Machine Learning`, `SQL`, `Data Visualization` dominate the skills word cloud | Confirms the market has converged hard on a data/AI skill stack, regardless of category |
 | **Data Science courses pack the most skills per course** | `4.74` avg. skills/course — highest across all categories | vs. `3.02` for Health and `3.79` for Business — Data Science courses are simply denser |
 
-<!-- 📸 Add your "Most Prominent Language" pie chart screenshot here -->
-![Language Breakdown](assets/02-language.png)
-
----
 
 ## 🖥️ Inside the Report
 
@@ -50,7 +46,7 @@ The `.pbix` is built as a **3-page interactive drilldown**, not a static snapsho
 - **Most Prominent Language** — donut breakdown of the English/Spanish/French/Japanese/Chinese/Portuguese/Russian split
 
 <!-- 📸 Add your Page 1 screenshot here -->
-![Page 1](assets/03-page1.png)
+![Page 1](graphs.png)
 
 ### Page 2 — Skills & Category Deep Dive
 - **Skills Word Cloud** — every skill tag in the dataset, sized by frequency (Python, SQL, and Machine Learning visually dominate)
@@ -59,28 +55,11 @@ The `.pbix` is built as a **3-page interactive drilldown**, not a static snapsho
 - **Viewers by Subtitle Count** — an S-curve showing viewership exploding once subtitle/language accessibility crosses a threshold
 
 <!-- 📸 Add your Page 2 screenshot here -->
-![Page 2](assets/04-page2.png)
+![Page 2](graphs2.png)
 
 ### Page 3 — Instructors & Duration
 - **Instructor Rating by Instructor** — sub-category filtered leaderboard of top-rated instructors
 - **Viewership vs. Duration** — a scatter/line tracing how course length correlates (or doesn't) with audience size
-
-<!-- 📸 Add your Page 3 screenshot here -->
-![Page 3](assets/05-page3.png)
-
----
-
-## 🗂️ Repo Structure
-
-```
-online-courses-dashboard/
-├── Online_Courses.csv         # Raw source data (8,092 courses, 43 columns)
-├── powerbidashboard.pbix      # The full interactive Power BI report
-├── assets/                    # Dashboard screenshots (referenced above)
-└── README.md
-```
-
----
 
 ## 🧱 About the Data
 
